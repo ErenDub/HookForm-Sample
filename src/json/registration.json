@@ -1,0 +1,103 @@
+{
+    "type": "object",
+    "name": "registration",
+    "label": "Registration",
+    "properties":[
+        {
+            "type": "object",
+            "name": "bio",
+            "label": "Personal information" ,
+            "properties":[
+                {
+                    "type": "text",
+                    "name": "name",
+                    "label": "Name",
+                    "required": true
+                },
+                {
+                    "type": "text",
+                    "name": "lastName",
+                    "label": "Last name",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "type": "date",
+            "name": "birthDay",
+            "label": "Birth day",
+            "required": true
+        },
+        {
+            "type": "object",
+            "name": "personalData",
+            "label": "personalData" ,
+            "properties":[
+                {
+                    "type": "number",
+                    "name": "idNumber",
+                    "label": "ID number",
+                    "required": true
+                },
+                {
+                    "type": "radio",
+                    "name": "gender",
+                    "label": "Gender",
+                    "required": true,
+                    "item":[
+                        {
+                            "name": "male",
+                            "value": "Male"
+                        },
+                        {
+                            "name": "female",
+                            "value": "Female"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "object",
+            "name": "contactInfo",
+            "label": "Contact Information" ,
+            "properties":[
+                {
+                    "type": "number",
+                    "name": "mobileNumber",
+                    "label": "Mobile Number",
+                    "required": true
+                },
+                
+                {
+                    "type": "mail",
+                    "name": "eMail",
+                    "label": "e-Mail",
+                    "required": true
+                }
+              
+                
+            ]
+        },        
+        {
+            "type": "object",
+            "name": "passwords",
+            "label": "Passwords",
+            "properties": [
+                {
+                    "type": "password",
+                    "name": "password",
+                    "label": "Password",
+                    "required": true
+                },
+                {
+                    "type": "password",
+                    "name": "repeatePassword",
+                    "label": "Repeate password",
+                    "required": true
+                }
+            ]
+        }
+            
+    ]
+}
